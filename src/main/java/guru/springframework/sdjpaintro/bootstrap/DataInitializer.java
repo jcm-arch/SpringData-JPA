@@ -27,7 +27,7 @@ public class DataInitializer implements CommandLineRunner {
 
         System.out.println("Id: " + savedDDD.getId() );
 
-        Book bookSIA = new Book("Spring In Action", "234234", "Oriely");
+        Book bookSIA = new Book("Spring In Action", "234234", "O'Reilly");
         Book savedSIA = bookRepository.save(bookSIA);
 
         bookRepository.findAll().forEach(book -> {
